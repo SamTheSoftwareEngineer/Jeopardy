@@ -1,0 +1,60 @@
+ #jeopardy {
+    background-color: #060ce9;
+    text-align: center;
+    color: white;
+  }
+
+  #jeopardy th, #jeopardy td {
+    border: solid 3px white;
+    width: 15em;
+    padding: 1em;
+  }
+   
+  th {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 4em;
+  }
+  
+  th:hover {
+    background-color: #28a200
+  }
+
+  td {
+    height: 9em;
+    font-family:Arial, Helvetica, sans-serif
+  }
+
+body {
+  background-color: #115ff4;
+  /* Light blue background with 100% opacity */
+}
+
+#title {
+  text-decoration-line: underline;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#start {
+  border-radius: 25px;
+  background-color: red;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#restart {
+  border-radius: 25px;
+  background-color: red;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#spin-container {
+  display: none;
+}

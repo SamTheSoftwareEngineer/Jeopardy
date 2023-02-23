@@ -33,6 +33,10 @@ const NUM_CLUES_PER_CAT = 5;
 let loader = document.getElementById("spin-container");
 
 
+
+// The await keyword in this async function pauses the execution and waits for a resolved promise before it continues 
+// * Important for APIs as we need to return a response (would that be considered a promise?)
+// What exactly is a promise?
 async function getCategoryIds() {
   // Make a GET request with axios to the API and grab 100 categories 
   let response = await axios.get(`${API_URL}categories?count=100`);
@@ -49,7 +53,7 @@ async function getCategory(catId) {
   let allClues = catdata.clues;
   // Randomize the clues from the array and only select 5 
   let randomClues = _.sampleSize(allClues, NUM_CLUES_PER_CAT);
-  // Creates a new array that contains the question and answers for each clue, does not reveal to user
+  // Creates a new array that contains the question and answers for each clue, null means that the user cannot see it 
   let clues = randomClues.map(clue => ({
     question: clue.question,
     answer: clue.answer,
